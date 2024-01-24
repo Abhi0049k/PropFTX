@@ -32,6 +32,7 @@ const login = async (req, res, next) => {
         const token = jwt.sign({ email: userDetails.email }, process.env.JWT_SECRET_KEY);
         res.status(200).send({ token });
     } catch (err) {
+        console.log(err);
         next(err);
     }
 }

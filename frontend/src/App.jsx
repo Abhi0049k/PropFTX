@@ -1,9 +1,14 @@
-import './App.css'
+import { BrowserRouter } from "react-router-dom"
+import Router from "./pages/Router"
+import { RecoilRoot } from "recoil"
 
 function App() {
-
   return (
-    <h1>Application</h1>
+    <RecoilRoot>
+      <BrowserRouter>
+        <Router />
+      </BrowserRouter>
+    </RecoilRoot>
   )
 }
 
