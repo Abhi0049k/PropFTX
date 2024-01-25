@@ -1,0 +1,206 @@
+{
+	"info": {
+		"_postman_id": "ae18bb6b-3b6f-4852-9d28-e12bb804fce4",
+		"name": "PropFTX",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29953974"
+	},
+	"item": [
+		{
+			"name": "USERS",
+			"item": [
+				{
+					"name": "REGISTER REQUEST",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"mangalam@gmail.com\",\r\n    \"password\": \"123456789\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8998/user/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8998",
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LOGIN REQUEST",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"mangalam@gmail.com\",\r\n    \"password\": \"123456789\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8998/user/login/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8998",
+							"path": [
+								"user",
+								"login",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MOVIES",
+			"item": [
+				{
+					"name": "GET REQUEST",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8998/movie/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8998",
+							"path": [
+								"movie",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST REQUEST",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Movie 2\",\r\n    \"genre\": \"horror, thriller\",\r\n    \"releaseDate\": \"2024-01-24T18:47:21.774Z\",\r\n    \"director\": \"Director 2P\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8998/movie/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8998",
+							"path": [
+								"movie",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT REQUEST",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Movie 1\",\r\n    \"genre\": \"comedy, adventure\",\r\n    \"releaseDate\": \"2024-01-24T18:47:21.774Z\",\r\n    \"director\": \"Director 1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8998/movie/65b15c56328986c49a5c31b6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8998",
+							"path": [
+								"movie",
+								"65b15c56328986c49a5c31b6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE REQUEST",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8998/movie/65b15ca2ede166bf29576724",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8998",
+							"path": [
+								"movie",
+								"65b15ca2ede166bf29576724"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbmdhbGFtQGdtYWlsLmNvbSIsImlhdCI6MTcwNjEyMTEwOX0.cPpN6Txqw1CBb2XbsIgh8SJr00r1TkrJAIM9YG7c7RM",
+						"type": "string"
+					}
+				]
+			}
+		},
+		{
+			"name": "HOME ROUTE",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8998/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8998",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
