@@ -4,7 +4,7 @@
 
 Welcome to the PropFTX Assignment! Develop a simple movie listing app using the MERN stack with either MongoDB as the database.
 ***
-FrontendURL: https://frontend-abhi0049k.vercel.app
+FrontendURL: https://marvelous-capybara-758fa8.netlify.app/
 BackendURL: https://propftx-znmd.onrender.com/
 
 
