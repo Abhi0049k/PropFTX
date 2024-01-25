@@ -14,7 +14,6 @@ const newMovie = async (req, res, next) => {
     const { title, genre, releaseDate, director } = req.body;
     try {
         const check = movieValidation.safeParse({ title, genre, releaseDate, director })
-
         if (!check.success) return next({ status: 422, message: 'Invalid Input' });
         const newMovie = new movieModel({ title, genre, releaseDate, director });
         await newMovie.save();

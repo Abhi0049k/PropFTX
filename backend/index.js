@@ -20,7 +20,7 @@ app.use('/user', userRouter);
 app.use('/movie', movieRouter);
 
 app.use('/*', (req, res) => {
-  res.status(404).send({ message: 'Page not found' })
+  res.status(404).send({ Error: 'Page not found' })
 })
 
 app.use((err, req, res, next) => {
